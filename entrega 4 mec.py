@@ -45,7 +45,7 @@ plt.ylabel(r'$\theta (t)$')
 plt.grid()
 
 plt.figure() #segona
-plt.plot(sol_var.t, sol_var.y[0], color='hotpink', label=r"$R(t)=1+0.5*np.sin(2*t)$")
+plt.plot(sol_var.t, sol_var.y[0], color='hotpink', label=r"$R(t)=1+0.5\sin(2t)$")
 plt.title('Solució per un radi variable')
 plt.legend()
 plt.xlabel('t')
@@ -54,7 +54,7 @@ plt.grid()
 
 plt.figure() #la primera i la segona superposades, per comparar
 plt.plot(sol_lin.t, sol_lin.y[0], color='hotpink', label=r"$R(t)=e^{2t}$") #plot 1
-plt.plot(sol_var.t, sol_var.y[0], color='purple', label=r"$R(t)=1+0.5*np.sin(2*t)$")#plot 2
+plt.plot(sol_var.t, sol_var.y[0], color='purple', label=r"$R(t)=1+0.5\sin(2t)$")#plot 2
 plt.title("Solucions d'ambdós casos")
 plt.legend()
 plt.xlabel('t')
